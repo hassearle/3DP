@@ -318,7 +318,11 @@
       "disable_fan_first_layers": "2",
       "material_color": "#FFFFFFFF",
       "first_layer_extrusion_width": "1.3",
-      "infill_overlap_perimeter": "35%"
+      "infill_overlap_perimeter": "35%",
+      "infill_speed": "40",
+      "top_solid_infill_speed": "30",
+      "perimeter_speed": "40",
+      "external_perimeter_speed": "30"
     }
   ],
   "StagedUserSettings": {
@@ -327,7 +331,9 @@
     "layer_height": "0.75",
     "first_layer_height": "0.5",
     "top_solid_layers": "4",
-    "bottom_solid_layers": "4"
+    "bottom_solid_layers": "4",
+    "infill_speed": "40",
+    "top_solid_infill_speed": "30"
   },
   "UserLayer": {
     "printer_name": "ROBO 3D R1 & R1 +Plus",
@@ -342,6 +348,7 @@
     "nozzle_diameter": "1",
     "create_raft": "0",
     "create_per_layer_support": "0",
-    "create_skirt": "1"
+    "create_skirt": "1",
+    "retract_length": "2"
   }
 }
