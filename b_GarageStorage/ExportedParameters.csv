@@ -1,0 +1,14 @@
+Name,Unit,Expression,Value,Comments,Favorite
+ST_Height,in,15.2 in,15.20,,false
+ST_Width,in,19.6 in,19.60,,false
+ST_Length,in,28.5 in,28.50,,false
+blade_kerf,in,( 1 / 8 ) * 1 in,0.125,,false
+Brace_thickness,in,1.5 in,1.50,,false
+Brace_width,in,3.5 in,3.50,,false
+ToteRale_width,in,( Brace_width / 2 ) - ( blade_kerf / 2 ),1.688,,false
+ToteRale_thickness,in,Brace_thickness,1.50,,false
+numOfShelves,,2,2,,false
+SpaceBTWShelves,in,2 in,2.00,,false
+Side_Height,in,( ( ST_Height + SpaceBTWShelves ) * numOfShelves ) - ( Brace_width * 2 ),27.40,,false
+Brace_length,in,ST_Length,28.50,,false
+Side_length,in,Brace_length + 1.5 in,30.00,,false
