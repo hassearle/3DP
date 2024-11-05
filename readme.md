@@ -6,3 +6,22 @@ v1.2.3.4
  └── Fusion360 redesign (major change / Design Overhaul)
 
 ├──   └──  │
+
+
+
+Brm: Brim
+BSL: Bottom Solid Layers
+LHP: Layer height percentage
+LrT: Layer thickness
+FLT: First layer thickness
+NzD: Nozzle diameter
+Rft: Raft
+Skt: Skirt
+TSL: Top Solid layers
+
+# Formulas:
+## Layer Thickness/Height
+> LrT=NzD∗(LHP/100)
+
+## Layer Hight Percentage
+> LHP=NzD/LrT
