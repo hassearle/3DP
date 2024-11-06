@@ -1,0 +1,13 @@
+{
+	"file path":	"/sdcard/cache/NaF_Cards_sm1_plate_3.3mf",
+	"subtask_name":	"NaF_Cards_sm1_plate_3",
+	"subtask id":	"313291194",
+	"timelapse":	true,
+	"bed_leveling":	true,
+	"flow_cali":	true,
+	"vibration_cali":	false,
+	"layer_inspect":	true,
+	"use ams":	false,
+	"xy_mech_mode_sweep":	false,
+	"auto_recovery":	true
+}
