@@ -25,3 +25,10 @@ TSL: Top Solid layers
 
 ## Layer Hight Percentage
 > LHP=NzD/LrT
+
+# File Structure:
+"Description - SubDescription - Filename" so "Miniature - DnD - Ranger", "Printer - Ender_3 - X_Carriage" 
+
+3DP
+  ├── Design (my drawings)
+  └── Download (others drawings)
