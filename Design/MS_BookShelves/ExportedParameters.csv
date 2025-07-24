@@ -1,0 +1,79 @@
+Name,Unit,Expression,Value,Comments,Favorite
+room_W_wall,ft,"10'-0"" + 5"" + 0.125 in",10.427,,false
+room_distance_to_ceiling,ft,9 ft,9.00,,false
+room_shelves_depth,in,"11"" + 0'- 1/16""",11.063,,false
+room_shelves_width,ft,"5'-0"" + 0'- 9/16""",5.047,,false
+room_shelves_height,ft,58.75 in,4.896,,false
+room_doors_left,ft,"2'-0"" + 5"" + 0'- 13/16""",2.484,,false
+room_doors_right,ft,room_doors_left,2.484,,false
+room_doorframe_left,ft,"2'-0"" + 11""",2.917,,false
+room_doorframe_right,ft,room_doorframe_left,2.917,,false
+room_NS_wall,ft,"11'-0"" + 10.75 in",11.896,,false
+room_S_wall_right,ft,"4'-0"" + 5"" + 0'- 11/16""",4.474,,false
+room_S_wall_left,ft,"4'-0"" + 6"" + 0'- 11/16""",4.557,,false
+room_S_wall_window,ft,"2'-0"" + 11.25 in",2.938,,false
+room_S_wall_total,ft,room_S_wall_left + room_S_wall_right + room_S_wall_window,11.969,,false
+room_N_wall_p1,ft,"3'-0"" + 0'- 5/16""",3.026,,false
+room_N_wall_p2,ft,"4'-0"" + 3"" + 0'- 5/16""",4.276,,false
+room_N_wall_p3,ft,"1'-0"" + 8"" + 0'- 5/16""",1.693,,false
+room_W_outlet_NWallToRight,ft,"2'-0"" + 6.5 in",2.542,,false
+room_W_outlet_floorToBtm,ft,"11"" + 0'- 5/8""",0.969,,false
+room_W_outlet_floorToTop,ft,"1'-0"" + 4"" + 0'- 11/16""",1.391,,false
+room_W_outlet_NWallToLeft,ft,"2'-0"" + 9"" + 0'- 7/8""",2.823,,false
+room_W_outlet_length,in,room_W_outlet_floorToTop - room_W_outlet_floorToBtm,5.063,,false
+room_W_outlet_width,in,room_W_outlet_NWallToLeft - room_W_outlet_NWallToRight,3.375,,false
+material_thickness,in,0.5 in,0.50,,false
+shlf_depth,in,10 in,10.00,,false
+cabinet_height,in,"3'-0"" - cabinet_toe_guard",33.00,,false
+shlf_W_ttl_width,in,"room_W_wall - 36""",89.125,,false
+cabinet_depth,in,"shlf_depth + 6""",16.00,,false
+shlf_S_ttl_width,in,room_S_wall_right - cabinet_depth - 1 in,36.688,,false
+shlf_ttl_height,in,"room_distance_to_ceiling - cabinet_height - material_thickness - cabinet_toe_guard - 3""",68.50,,false
+cabinet_toe_guard,in,material_toe_width,3.00,,false
+shlf_W_NumOfSections,,3,3,,false
+shlf_W_numOfSides,,shlf_W_NumOfSections * 2,6,,false
+shlf_W_ttl_SidesThickness,in,shlf_W_numOfSides * material_thickness,3.00,,false
+shlf_W_shelf_length,in,floor(( shlf_W_ttl_width - shlf_W_ttl_SidesThickness ) / shlf_W_NumOfSections),28.00,,false
+shlf_W_distanceBTWShelves,in,12 in,12.00,,false
+shlf_W_numOfShelves,,floor(shlf_ttl_height / shlf_W_distanceBTWShelves) + 1,6,,false
+toe_W_length,in,shlf_W_shelf_length + ( material_thickness * 2 ),29.00,,false
+toe_W_width,in,cabinet_depth - cabinet_toe_guard,13.00,,false
+material_toe_width,in,3.0 in,3.00,,false
+material_toe_thickness,in,1.5 in,1.50,,false
+toe_bracket,in,6 in,6.00,,false
+cabinet_W_tblTopLength,in,( shlf_W_shelf_length + ( material_thickness * 2 ) ) * 3,87.00,,false
+cabinet_W_side_width,in,cabinet_depth - ( material_thickness * 2 ),15.00,,false
+cabinet_W_side_length,in,cabinet_height - ( material_thickness / 2 ),32.75,,false
+cabinet_W_back_length,in,cabinet_height - ( material_thickness / 2 ),32.75,,false
+cabinet_W_back_width,in,toe_W_length,29.00,,false
+cabinet_W_btm_width,in,cabinet_depth,16.00,,false
+cabinet_W_btm_length,in,toe_W_length,29.00,,false
+cabinet_W_front_TB_length,in,cabinet_W_btm_length,29.00,,false
+cabinet_W_front_width,in,cabinet_bezzle,3.00,,false
+cabinet_W_front_LR_length,in,cabinet_W_side_length - ( cabinet_W_front_width * 2 ),26.75,,false
+cabinet_bezzle,in,3 in,3.00,,false
+shlf_W_back_width,in,shlf_W_shelf_length + ( material_thickness * 2 ),29.00,,false
+shlf_W_back_length,in,shlf_ttl_height,68.50,,false
+shlf_W_sides_width,in,shlf_depth + ( material_thickness / 2 ),10.25,,false
+shlf_W_side_length,in,shlf_ttl_height,68.50,,false
+cabinet_W_door_offset,in,( cabinet_bezzle / 2 ) + 0.25 in,1.75,,false
+cabinet_W_door_TB_length,in,( cabinet_W_front_TB_length / 2 ) - cabinet_W_door_offset - ( cabinet_W_doors_spaceBTWDoors / 2 ),12.625,,false
+cabinet_W_door_TB_width,in,cabinet_door_bezzle,2.00,,false
+cabinet_W_doors_spaceBTWDoors,in,0.25 in,0.25,,false
+cabinet_W_door_LR_length,in,cabinet_W_side_length - ( cabinet_W_door_offset * 2 ) - ( cabinet_W_door_TB_width * 2 ),25.25,,false
+cabinet_door_bezzle,in,2 in,2.00,,false
+cabinet_W_door_LR_width,in,cabinet_door_bezzle,2.00,,false
+cabinet_W_door_rabbit,in,material_door_center,0.25,,false
+cabinet_W_door_center_width,in,cabinet_W_door_TB_length - ( cabinet_W_door_LR_width * 2 ) + ( cabinet_W_door_rabbit ),8.875,,false
+cabinet_W_door_center_length,in,cabinet_W_door_LR_length + cabinet_W_door_rabbit,25.50,,false
+cabinet_W_door_center_thickness,in,material_door_center,0.25,,false
+material_door_center,in,0.25 in,0.25,,false
+cabinet_W_trim_W_length,in,cabinet_W_tblTopLength + material_thickness,87.50,material thickness is to accomidate for champher,false
+cabinet_W_trim_W_width,in,material_thickness + cabinet_W_door_offset - 0.25 in,2.00,,false
+cabinet_W_trim_N_length,in,cabinet_depth + material_thickness,16.50,,false
+cabinet_W_trim_N_width,in,cabinet_W_trim_W_width,2.00,b/c it needs to match the other trim,false
+shlf_W_molding_width,in,1.5 in,1.50,,false
+shlf_W_molding_length,in,shlf_W_side_length,68.50,,false
+shlf_W_molding_origin,in,0.001 in,0.001,,false
+cabinet_W_trim_W_LR_length,in,( cabinet_W_front_width * 2 ) + cabinet_W_front_LR_length - ( cabinet_W_trim_W_LR_width * 2 ),29.75,,false
+cabinet_W_trim_W_LR_width,in,shlf_W_molding_width,1.50,,false
